@@ -16,7 +16,9 @@ cd dbgp-proxy-docker
 # Either use docker-compose to start the service
 docker-compose up -d
 
-# ...or, you can just use the docker run command
-docker run -p 9000:9000 -p 9001:9001 alexhath/dbgp-proxy-docker
+# ...or, you can build 
+docker build -t dbgp-proxy-docker .
+# ...and run the container 
+docker run -p 9000:9000 -p 9001:9001 dbgp-proxy-docker
 
 ```
