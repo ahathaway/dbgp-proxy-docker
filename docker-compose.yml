@@ -1,0 +1,12 @@
+version: '3.3'
+services:
+  dbgp-proxy:
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: alexhath/dbgp-proxy-docker:latest
+    container_name: dbgp-proxy
+    ports:
+      - "9000:9000"
+      - "9001:9001"
