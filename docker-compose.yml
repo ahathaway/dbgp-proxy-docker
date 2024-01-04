@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: alexhath/dbgp-proxy-docker:latest
+    image: alexhath/dbgp-proxy-docker:1.0.1
     container_name: dbgp-proxy
     ports:
       - "9000:9000"
